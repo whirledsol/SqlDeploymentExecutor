@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "SqlDeploymentExecutor": {
+      "commandName": "Project",
+      "commandLineArgs": "-d \"C:\\Users\\astro\\Freelance\\IPA\\Source\\Repos\\PopWeb\\PopWeb.Database\\Deployments\\Test\" -c \"Server=10.0.0.4;UID=Owner_PopWebStage;PWD=JG?mjrwS9LDM%T4kM_JZ;Initial Catalog=PopWebStage;\" "
+    }
+  }
+}
