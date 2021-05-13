@@ -13,7 +13,7 @@ namespace SqlDeploymentExecutor
         [Option('d', "directory", Required = true, HelpText = "The directory of sql files to run, assuming no subdirectories and files are ordered by name.")]
         public string Path { get; set; }
 
-        [Option('h', "header", Required = false, HelpText = "Ignore running files that contain the following text in their first line.", Default = "SDE EXECUTED")]
+        [Option('h', "header", Required = false, HelpText = "Ignore running files that contain the following text in their first line.", Default = "EXECUTED")]
         public string ExecutedHeader { get; set; }
 
         [Option('e', "ext", HelpText = "Only run these exts.", Default =".sql")]
