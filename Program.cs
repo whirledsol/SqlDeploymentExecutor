@@ -168,7 +168,9 @@ namespace SqlDeploymentExecutor
         /// <param name="args"></param>
         static void UpdateFileWithHeader(string file, string content, Arguments args)
         {
-            var header = $"-- {args.ExecutedHeader} ON {DateTime.Now} BY {args.User}\r\n\r\n";
+            SqlConnectionStringBuilder connectionStringBuilder = new SqlConnectionStringBuilder(args.cs);
+            string database = connectionStringBuilder.InitialCatalog;
+            var header = $"-- {args.ExecutedHeader} USING {database ?? "____"} ON {DateTime.Now} BY {args.User}\r\n";
             File.WriteAllText(file, header + content);
         }
 
