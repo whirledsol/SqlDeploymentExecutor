@@ -2,7 +2,7 @@
   "profiles": {
     "SqlDeploymentExecutor": {
       "commandName": "Project",
-      "commandLineArgs": "-d \"C:\\Repos\\HGP\\HGP.Database\\Deployments\\ParticipantList Migration\" -c \"Server=hgp-sql01;UID=wrhodes;PWD=____;Initial Catalog=MCR;\""
+      "commandLineArgs": "-d \"C:\\Repos\\HGP\\HGP.Database\\Deployments\\ParticipantList Migration\" -c \"Server=hgp-sql01;UID=wrhodes;PWD=JustBreathe0k;Initial Catalog=test_MCR;\" "
     }
   }
 }
